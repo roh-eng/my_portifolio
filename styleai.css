@@ -1,0 +1,115 @@
+* {
+    font-family: cursive;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    background-color: lightblue;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: brown;
+    margin: 0;
+}
+
+header {
+    height: 100vh;
+    background-color: rgb(133, 176, 254);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    margin-bottom: 20px;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button {
+    height: 40px;
+    width: 140px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: white;
+    background-color: lightskyblue;
+}
+
+img {
+    height: 400px;
+    width: auto;
+    border-radius: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    height: auto;
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: white;
+}
+
+.submit {
+    height: 40px;
+    width: 140px;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+}
+
+.submit:hover {
+    color: black;
+    background-color: darkcyan;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 25px;
+    margin: 5px;
+}
+
+/* Centered list numbers and content */
+ol {
+    list-style-position: inside;
+    padding-left: 0;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+}
+
+/* ✅ Footer styling */
+footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
