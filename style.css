@@ -91,7 +91,7 @@ input {
     margin: 5px;
 }
 
-/* Centered list numbers and content */
+
 ol {
     list-style-position: inside;
     padding-left: 0;
@@ -100,7 +100,7 @@ ol {
     text-align: center;
 }
 
-/* ✅ Footer styling */
+
 footer {
     background-color: #007BFF;
     color: white;
@@ -113,3 +113,4 @@ footer a {
     color: white;
     text-decoration: underline;
 }
+
