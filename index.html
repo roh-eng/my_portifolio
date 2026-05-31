@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Devadula | Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">RD<span class="dot">.</span></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="bgCanvas"></canvas>
+        <div class="hero-glow hero-glow-1"></div>
+        <div class="hero-glow hero-glow-2"></div>
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, World! 👋</p>
+            <h1 class="hero-title">I'm <span class="gradient-text">Rohit Devadula</span></h1>
+            <div class="hero-subtitle">
+                <span id="typingText"></span><span class="cursor">|</span>
+            </div>
+            <p class="hero-description">
+                B.Tech Student &bull; Aditya College of Engineering &amp; Technology<br>
+                Passionate about building things with code.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Get In Touch
+                </a>
+                <a href="#projects" class="btn btn-secondary">
+                    View My Work <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator"><span></span></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-tag">Who Am I</p>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <div class="image-wrapper">
+                        <img src="rohit.jpg" alt="Rohit Devadula" />
+                        <div class="image-border"></div>
+                        <div class="image-glow"></div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">8.2</span>
+                            <span class="stat-label">CGPA</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5</span>
+                            <span class="stat-label">Skills</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content reveal">
+                    <h3>A Student Developer from India</h3>
+                    <p>
+                        I'm <strong>Rohit Devadula</strong>, a B.Tech student at
+                        <em>Aditya College of Engineering and Technology</em>, Andhra Pradesh.
+                        I'm passionate about technology and driven to build meaningful software.
+                    </p>
+                    <p>
+                        Maintaining a CGPA of <strong>8.2</strong>, I balance academic excellence
+                        with real-world technical skills. I enjoy solving problems, writing clean code,
+                        and constantly expanding my knowledge in the world of programming.
+                    </p>
+                    <p>
+                        Currently focused on strengthening my core in Python and Java while
+                        exploring web development and building projects that matter.
+                    </p>
+                    <div class="about-tags">
+                        <span class="tag"><i class="fab fa-python"></i> Python</span>
+                        <span class="tag"><i class="fab fa-java"></i> Java</span>
+                        <span class="tag"><i class="fab fa-servicenow"></i> ServiceNow</span>
+                        <span class="tag"><i class="fab fa-html5"></i> HTML &amp; CSS</span>
+                        <span class="tag"><i class="fas fa-brain"></i> Problem Solving</span>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">Let's Connect</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-tag">What I Know</p>
+                <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fab fa-python"></i></div>
+                    <h3>Python</h3>
+                    <p>Core programming concepts, data structures, scripting, and algorithmic thinking.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="65"></div>
+                    </div>
+                    <span class="skill-level">Fundamentals</span>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fab fa-java"></i></div>
+                    <h3>Java</h3>
+                    <p>Object-oriented programming, classes, inheritance, and core Java concepts.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="55"></div>
+                    </div>
+                    <span class="skill-level">Fundamentals</span>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                    <h3>HTML &amp; CSS</h3>
+                    <p>Structuring semantic web pages and styling with modern CSS techniques.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="72"></div>
+                    </div>
+                    <span class="skill-level">Intermediate</span>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Problem Solving</h3>
+                    <p>Analytical thinking, breaking complex problems into clear, logical steps.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="78"></div>
+                    </div>
+                    <span class="skill-level">Strong</span>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fab fa-servicenow"></i></div>
+                    <h3>ServiceNow</h3>
+                    <p>App Engine Studio, Flow Designer, custom tables, ACLs, and REST Table API integration.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="68"></div>
+                    </div>
+                    <span class="skill-level">Intermediate</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-tag">What I've Built</p>
+                <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card project-featured reveal">
+                    <div class="project-badge">Featured &bull; Team Lead</div>
+                    <div class="project-header">
+                        <div class="project-icon-wrap project-icon-large">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/roh-eng/Employee-onboarding-ps57" target="_blank" rel="noopener" title="View on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Enterprise Workflow Hub</h3>
+                    <p>A production-ready, full-stack enterprise application bridging a Node.js backend with ServiceNow PDI to deliver end-to-end employee onboarding, SLA intelligence, real-time dashboards, and an AI-powered Help Assistant. Built as <strong>Team Lead</strong>.</p>
+                    <div class="project-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-users-cog"></i>
+                            <span>HR + IT automation via Flow Designer</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>JWT auth, RBAC, Helmet, rate limiting</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-robot"></i>
+                            <span>AI bottleneck risk prediction (Gemini API)</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Live dashboards with Chart.js &amp; WebSockets</span>
+                        </div>
+                    </div>
+                    <div class="project-tags">
+                        <span>Node.js</span><span>Express</span><span>ServiceNow</span><span>JWT</span><span>Chart.js</span><span>Gemini AI</span><span>Docker</span>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <div class="project-icon-wrap">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" title="View Code"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Personal Portfolio</h3>
+                    <p>A modern, animated developer portfolio website built with HTML, CSS, and JavaScript. Features a particle canvas background, scroll animations, typing effect, and fully responsive design.</p>
+                    <div class="project-tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-tag">Get In Touch</p>
+                <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+                <p class="section-desc">Have a question or want to collaborate? Drop a message!</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>rohitdevadula7@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Andhra Pradesh, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div>
+                            <h4>College</h4>
+                            <p>Aditya College of Engineering &amp; Technology</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/rohit-devadula-1b9b9a290/" target="_blank" rel="noopener" class="social-btn" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/roh-eng" target="_blank" rel="noopener" class="social-btn" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:rohitdevadula7@gmail.com" class="social-btn" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form reveal" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="fname" placeholder=" " required autocomplete="off">
+                        <label for="fname">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="femail" placeholder=" " required autocomplete="off">
+                        <label for="femail">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="fmessage" rows="5" placeholder=" " required></textarea>
+                        <label for="fmessage">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="nav-logo">RD<span class="dot">.</span></div>
+                <p>Designed &amp; Built by <span class="gradient-text">Rohit Devadula</span></p>
+                <p class="footer-copy">&copy; 2025 Rohit Devadula &mdash; All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
